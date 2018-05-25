@@ -1,3 +1,50 @@
 /*--------------------------------------------------------------
 # Embedded Fonts
 --------------------------------------------------------------*/
+
+// Exo From Google Fonts
+
+@import url("https://fonts.googleapis.com/css?family=Exo:300,300i,400,500,500i");
+
+/* Exo - From local failback */
+
+@font-face {
+    font-family: 'Exo-FailBack';
+    src: local('Exo LightItalic'), local('Exo-LightItalic'),
+        url('../asserts/fonts/Exo-LightItalic.woff2') format('woff2'),
+        url('../asserts/fonts/Exo-LightItalic.woff') format('woff'),
+        url('../asserts/fonts/Exo-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Exo-FailBack';
+    src: local('Exo MediumItalic'), local('Exo-MediumItalic'),
+        url('../asserts/fonts/Exo-MediumItalic.woff2') format('woff2'),
+        url('../asserts/fonts/Exo-MediumItalic.woff') format('woff'),
+        url('../asserts/fonts/Exo-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Exo-FailBack';
+    src: local('Exo Medium'), local('Exo-Medium'),
+        url('../asserts/fonts/Exo-Medium.woff2') format('woff2'),
+        url('../asserts/fonts/Exo-Medium.woff') format('woff'),
+        url('../asserts/fonts/Exo-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Exo-FailBack';
+    src: local('Exo Light'), local('Exo-Light'),
+        url('../asserts/fonts/Exo-Light.woff2') format('woff2'),
+        url('../asserts/fonts/Exo-Light.woff') format('woff'),
+        url('../asserts/fonts/Exo-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+

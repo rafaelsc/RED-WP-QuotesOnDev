@@ -1,10 +1,13 @@
 // Structure
 
-$base__space-unit: 1.5rem;
+$max__width: 1080px; //This fixed width website is 1080px wide
+$base__space-unit: 1.5rem; //The base spacing unit is 1.5rem
 
 // Colors
 
-$color__background-body: #fff;
+$color__background-body: #222; //The main background colour is #222222
+//The HEX code for the green brand colour is #00cc00
+
 $color__text-main: #404040;
 
 $color__background-screen: #f1f1f1;
@@ -21,8 +24,9 @@ $color__link-hover: midnightblue;
 
 // Typography
 
-$font__main: sans-serif;
+$font__size: 16; //The base font size is 16px and its HEX code is #404040
+$font__main: "Exo", "Exo-FailBack", sans-serif;
 $font__code: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
 $font__pre: "Courier 10 Pitch", Courier, monospace;
-$font__line-height-body: 1.5;
+$font__line-height-body: 1.5; //The base line-height for the site is 1.5
 $font__line-height-pre: 1.6;

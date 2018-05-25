@@ -39,6 +39,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 	## All Archives Page
 	## Submit a Quote Page
 --------------------------------------------------------------*/
+@import url("https://fonts.googleapis.com/css?family=Exo:300,300i,400,500,500i");
 html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
@@ -221,6 +222,31 @@ th {
 /*--------------------------------------------------------------
 # Embedded Fonts
 --------------------------------------------------------------*/
+/* Exo - From local failback */
+@font-face {
+  font-family: 'Exo-FailBack';
+  src: local("Exo LightItalic"), local("Exo-LightItalic"), url("../asserts/fonts/Exo-LightItalic.woff2") format("woff2"), url("../asserts/fonts/Exo-LightItalic.woff") format("woff"), url("../asserts/fonts/Exo-LightItalic.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Exo-FailBack';
+  src: local("Exo MediumItalic"), local("Exo-MediumItalic"), url("../asserts/fonts/Exo-MediumItalic.woff2") format("woff2"), url("../asserts/fonts/Exo-MediumItalic.woff") format("woff"), url("../asserts/fonts/Exo-MediumItalic.ttf") format("truetype");
+  font-weight: 500;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Exo-FailBack';
+  src: local("Exo Medium"), local("Exo-Medium"), url("../asserts/fonts/Exo-Medium.woff2") format("woff2"), url("../asserts/fonts/Exo-Medium.woff") format("woff"), url("../asserts/fonts/Exo-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Exo-FailBack';
+  src: local("Exo Light"), local("Exo-Light"), url("../asserts/fonts/Exo-Light.woff2") format("woff2"), url("../asserts/fonts/Exo-Light.woff") format("woff"), url("../asserts/fonts/Exo-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal; }
+
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
@@ -230,7 +256,7 @@ input,
 select,
 textarea {
   color: #404040;
-  font-family: sans-serif;
+  font-family: "Exo", "Exo-FailBack", sans-serif;
   font-size: 1rem;
   line-height: 1.5; }
 
@@ -292,7 +318,7 @@ html {
           box-sizing: inherit; }
 
 body {
-  background: #fff;
+  background: #222;
   /* Fallback for when there is no custom background color defined. */ }
 
 blockquote, q {
