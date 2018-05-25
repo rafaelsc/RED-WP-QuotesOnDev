@@ -222,7 +222,6 @@ th {
 /*--------------------------------------------------------------
 # Embedded Fonts
 --------------------------------------------------------------*/
-/* Exo - From local failback */
 @font-face {
   font-family: 'Exo-FailBack';
   src: local("Exo LightItalic"), local("Exo-LightItalic"), url("../asserts/fonts/Exo-LightItalic.woff2") format("woff2"), url("../asserts/fonts/Exo-LightItalic.woff") format("woff"), url("../asserts/fonts/Exo-LightItalic.ttf") format("truetype");
