@@ -66,3 +66,17 @@ mark, ins {
 big {
 	font-size: 125%;
 }
+
+
+a {
+	color: $color__link;
+	
+	&:hover,
+	&.focus {
+		color: $color__link-hover;
+	}
+	
+	&:visited {
+		color:  $color__brand-green;
+	}
+}

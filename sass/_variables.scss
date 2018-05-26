@@ -5,22 +5,25 @@ $base__space-unit: 1.5rem; //The base spacing unit is 1.5rem
 
 // Colors
 
+$color__brand-green: #00cc00; //The HEX code for the green brand colour is #00cc00
+
 $color__background-body: #222; //The main background colour is #222222
-//The HEX code for the green brand colour is #00cc00
 
 $color__text-main: #404040;
 
 $color__background-screen: #f1f1f1;
-$color__text-screen: #21759b;
+$color__text-screen: #fff;
 
 $color__background-hr: #ccc;
 $color__background-pre: #eee;
 $color__background-ins: #fff9c0;
 $color__border-abbr: #666;
 
-$color__link: royalblue;
-$color__link-visited: purple;
-$color__link-hover: midnightblue;
+$color__link: $color__brand-green;
+$color__link-hover: darken( $color__brand-green, 10% );
+$color__link-visited:  darken( $color__brand-green, 15% );
+
+$color__border: $color__brand-green;
 
 // Typography
 
