@@ -21,8 +21,14 @@
 			<a class="skip-link screen-reader-text" href="#content"><?php esc_html( 'Skip to content' ); ?></a>
 
 			<header id="masthead" class="site-header" role="banner">
+
 				<div class="site-branding">
-					<h1 class="site-title screen-reader-text"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+						<div class="logo">
+							<h1 class="site-title screen-reader-text"><?php bloginfo( 'name' ); ?></h1>
+							<img src="<?php echo get_stylesheet_directory_uri().'/build/asserts/logo/qod-logo.svg' ?>" alt="<?php bloginfo( 'name' ); ?>">
+						</div>
+					</a>
 				</div><!-- .site-branding -->
 
 			</header><!-- #masthead -->

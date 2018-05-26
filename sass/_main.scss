@@ -1,0 +1,18 @@
+.site-header {
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+
+    .site-branding {
+        margin: 0 auto;
+        width: 700px;
+
+        // background-repeat: no-repeat;
+        // background-size: cover;
+		// background-image: url("../asserts/logo/qod-logo.svg");
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+}
+

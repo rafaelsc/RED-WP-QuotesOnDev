@@ -738,3 +738,12 @@ object {
 --------------------------------------------------------------*/
 /* All Archives Page */
 /* Submit a Quote Page */
+.site-header {
+  margin-top: 3rem;
+  margin-bottom: 1rem; }
+  .site-header .site-branding {
+    margin: 0 auto;
+    width: 700px; }
+    .site-header .site-branding img {
+      width: 100%;
+      height: auto; }
