@@ -24,3 +24,36 @@
     margin-top: 3rem;
     margin-bottom: 1rem;
 }
+
+.site {
+    width: 100%;
+    max-width: $max__width;
+    margin: 0 auto;
+    padding: 3rem;
+}
+
+.site-content {
+
+    margin: 4.5rem 175px 1.5rem;
+    position: relative;
+
+    &::before, &::after {
+        color: $color__brand-green;
+
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        font-size: 125px;
+        line-height: 125px;
+        
+        position: absolute;
+        top: 0;
+    }
+    &::before {
+        content: "\f10d";
+        left: -175px;
+    }
+    &::after {
+        content: "\f10e";
+        right: -175px;
+    }
+}

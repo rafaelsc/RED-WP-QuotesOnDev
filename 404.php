@@ -15,7 +15,6 @@ get_header(); ?>
 			<section class="error-404 not-found">
 				<header class="page-header">
 					<h1 class="page-title"><?php echo esc_html( 'Oops!' ); ?></h1>
-					<p class="page-title"><?php echo esc_html( 'That page can&rsquo;t be found.' ); ?></p>
 				</header><!-- .page-header -->
 
 				<div class="page-content">

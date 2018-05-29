@@ -778,3 +778,27 @@ object {
   width: 100%;
   margin-top: 3rem;
   margin-bottom: 1rem; }
+
+.site {
+  width: 100%;
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 3rem; }
+
+.site-content {
+  margin: 4.5rem 175px 1.5rem;
+  position: relative; }
+  .site-content::before, .site-content::after {
+    color: #00cc00;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 125px;
+    line-height: 125px;
+    position: absolute;
+    top: 0; }
+  .site-content::before {
+    content: "\f10d";
+    left: -175px; }
+  .site-content::after {
+    content: "\f10e";
+    right: -175px; }
