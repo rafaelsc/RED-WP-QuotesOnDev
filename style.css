@@ -426,7 +426,8 @@ big {
   font-size: 125%; }
 
 a {
-  color: #00cc00; }
+  color: #00cc00;
+  text-decoration: none; }
   a:hover, a.focus {
     color: #009900; }
   a:visited {
