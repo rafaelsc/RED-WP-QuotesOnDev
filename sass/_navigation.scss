@@ -28,8 +28,9 @@ a {
 
 .main-navigation {
 	clear: both;
-	display: block;
-	float: left;
+	display: inline-flex;
+	justify-content: flex-end;
+	// float: right;
 	width: 100%;
 
 	ul {
@@ -81,10 +82,10 @@ a {
 
 		float: left;
 		position: relative;
+		padding: 0 1rem;
+		line-height: 1;
 
 		border-right: 1px solid $color__border;
-		line-height: 1;
-		padding: 0 1rem;
 
 		&:first-child {
 			padding-left: 0;

@@ -586,8 +586,12 @@ a {
 /* Menus */
 .main-navigation {
   clear: both;
-  display: block;
-  float: left;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   width: 100%; }
   .main-navigation ul {
     display: none;
@@ -617,9 +621,9 @@ a {
     color: #00cc00;
     float: left;
     position: relative;
-    border-right: 1px solid #00cc00;
+    padding: 0 1rem;
     line-height: 1;
-    padding: 0 1rem; }
+    border-right: 1px solid #00cc00; }
     .main-navigation li:first-child {
       padding-left: 0; }
     .main-navigation li:last-child {
@@ -778,6 +782,13 @@ object {
   width: 100%;
   margin-top: 3rem;
   margin-bottom: 1rem; }
+  .site-footer .main-navigation p {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    margin: 0px;
+    padding: 0 1rem;
+    border-left: 1px solid #00cc00; }
 
 .site {
   width: 100%;

@@ -14,6 +14,7 @@
 				<nav id="site-navigation" class="main-navigation" role="navigation">
 					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html( 'Primary Menu' ); ?></button>
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+					<p>Brought to you by &nbsp;<a href="https://www.redacademy.com">RED Academy</a></p>			
 				</nav><!-- #site-navigation -->
 
 			</footer><!-- #colophon -->

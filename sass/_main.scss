@@ -23,6 +23,15 @@
 
     margin-top: 3rem;
     margin-bottom: 1rem;
+
+    .main-navigation {
+        p {
+            display: inline-flex;
+            margin: 0px;
+            padding: 0 1rem;
+            border-left: 1px solid $color__border;
+        }
+    }
 }
 
 .site {
@@ -44,7 +53,7 @@
         font-weight: 900;
         font-size: 125px;
         line-height: 125px;
-        
+
         position: absolute;
         top: 0;
     }
