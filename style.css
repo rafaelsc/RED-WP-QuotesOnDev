@@ -797,10 +797,13 @@ object {
   margin: 0 auto;
   padding: 3rem; }
 
-.site-content {
+.content-area {
+  padding-bottom: 20rem; }
+
+.content-area {
   margin: 4.5rem 175px 1.5rem;
   position: relative; }
-  .site-content::before, .site-content::after {
+  .content-area::before, .content-area::after {
     color: #00cc00;
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
@@ -808,9 +811,23 @@ object {
     line-height: 125px;
     position: absolute;
     top: 0; }
-  .site-content::before {
+  .content-area::before {
     content: "\f10d";
     left: -175px; }
-  .site-content::after {
+  .content-area::after {
     content: "\f10e";
     right: -175px; }
+
+.site-archive {
+  display: block; }
+  .site-archive > div {
+    padding-bottom: 2rem; }
+  .site-archive ul {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0; }
+  .site-archive li {
+    float: left;
+    font-size: 1.25rem;
+    margin-bottom: .6rem;
+    margin-right: 1.25rem; }
