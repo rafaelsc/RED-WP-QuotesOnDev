@@ -798,9 +798,6 @@ object {
   padding: 3rem; }
 
 .content-area {
-  padding-bottom: 20rem; }
-
-.content-area {
   margin: 4.5rem 175px 1.5rem;
   position: relative; }
   .content-area::before, .content-area::after {
@@ -831,3 +828,21 @@ object {
     font-size: 1.25rem;
     margin-bottom: .6rem;
     margin-right: 1.25rem; }
+
+.number-pagination {
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 1px dotted #fff; }
+  .number-pagination .page-numbers {
+    padding: 0 .25rem; }
+
+.archive .entry-content {
+  font-size: 2.25rem; }
+
+.archive .entry-title {
+  font-size: 1.25rem;
+  font-weight: 400; }
+
+.archive article {
+  border-top: 1px dotted #fff;
+  padding: .2rem 0; }
