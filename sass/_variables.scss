@@ -8,10 +8,11 @@ $base__space-unit: 1.5rem; //The base spacing unit is 1.5rem
 $color__brand-green: #00cc00; //The HEX code for the green brand colour is #00cc00
 
 $color__background-body: #222; //The main background colour is #222222
-$color__text-screen: #fff;
+
 
 ///
 
+$color__text-screen: #fff;
 $color__text-main: #404040;
 $color__background-screen: #f1f1f1;
 
@@ -25,7 +26,8 @@ $color__link: $color__brand-green;
 $color__link-hover: darken( $color__brand-green, 10% );
 $color__link-visited:  darken( $color__brand-green, 15% );
 
-$color__border: $color__brand-green;
+$color__border_1: $color__brand-green;
+$color__border_2: #fff;
 
 // Typography
 
@@ -35,3 +37,9 @@ $font__code: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
 $font__pre: "Courier 10 Pitch", Courier, monospace;
 $font__line-height-body: 1.5; //The base line-height for the site is 1.5
 $font__line-height-pre: 1.6;
+
+
+// Borders
+
+$border__solid: 1px solid $color__border_1;
+$border__dashed: 1px dotted $color__border_2;

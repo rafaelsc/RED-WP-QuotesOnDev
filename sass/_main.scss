@@ -5,12 +5,18 @@
     margin-bottom: 1rem;
 
     .site-branding {
-        margin: 0 auto;
-        width: 700px;
+        width: 100%;
+        max-width: 300px;
 
-        // background-repeat: no-repeat;
-        // background-size: cover;
-		// background-image: url("../asserts/logo/qod-logo.svg");
+        @include tablet {
+            max-width: 500px;
+        }
+
+        @include desktop {
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
         img {
             width: 100%;
             height: auto;
@@ -28,8 +34,12 @@
         p {
             display: inline-flex;
             margin: 0px;
-            padding: 0 1rem;
-            border-left: 1px solid $color__border;
+            padding-top: 10px;
+
+            @include tablet {
+                padding: 0 1rem;
+                border-left: $border__solid;
+            }
         }
     }
 }
@@ -38,32 +48,34 @@
     width: 100%;
     max-width: $max__width;
     margin: 0 auto;
-    padding: 3rem;
+    padding: 2.5%;
 }
 
 .content-area {
-
-    margin: 4.5rem 175px 1.5rem;
     position: relative;
 
-    &::before, &::after {
-        color: $color__brand-green;
+    @include desktop {
+        margin: 4.5rem 175px 1.5rem;
 
-        font-family: "Font Awesome 5 Free";
-        font-weight: 900;
-        font-size: 125px;
-        line-height: 125px;
-
-        position: absolute;
-        top: 0;
-    }
-    &::before {
-        content: "\f10d";
-        left: -175px;
-    }
-    &::after {
-        content: "\f10e";
-        right: -175px;
+        &::before, &::after {
+            color: $color__brand-green;
+    
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+            font-size: 125px;
+            line-height: 125px;
+    
+            position: absolute;
+            top: 0;
+        }
+        &::before {
+            content: "\f10d";
+            left: -175px;
+        }
+        &::after {
+            content: "\f10e";
+            right: -175px;
+        }
     }
 }
 
@@ -92,7 +104,7 @@
 .number-pagination {
     margin-top: 2rem;
     padding-top: 2rem;
-    border-top: 1px dotted $color__text-screen;
+    border-top: $border__dashed;
 
     .page-numbers {
         padding: 0 .25rem;
@@ -108,7 +120,7 @@
         font-weight: 400;
     }       
     article {
-        border-top: 1px dotted $color__text-screen;
+        border-top: $border__dashed;
         padding: .2rem 0;
     }
 
