@@ -14,8 +14,26 @@ get_header(); ?>
 
 			<?php if ( current_user_can( 'publish_posts' ) ) : ?>
 
-				<p>Loged - Submit Form</p>
-				<!-- TODO -->
+				<form>
+					<fieldset>
+						<label>Author of Quote</label>
+						<input id="author" type="text" required="required"/>
+					</fieldset>
+					<fieldset>
+						<label>Quote</label>
+						<textarea id="quote" required="required" rows="4"></textarea>
+					</fieldset>
+					<fieldset>
+						<label>Where did you find this quote? (e.g. book name)</label>
+						<input id="source" type="text" />
+					</fieldset>
+					<fieldset>
+						<label>Provide the URL of the quote, if available.</label>
+						<input id="url" type="url"/>
+					</fieldset>
+				
+					<button id="submit-quote">Submit quote</button>
+				</form>
 
 			<?php else : ?>
 

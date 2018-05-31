@@ -34,6 +34,9 @@ input[type="url"],
 input[type="password"],
 input[type="search"],
 textarea { 
+
+	width: 65%;
+	
 	color: $color__text-screen;
 	background-color: $color__background-body;
     border: 2px solid $color__brand-green;
@@ -65,7 +68,13 @@ fieldset {
 	border: 0;
     margin: 0;
 	padding: 0;
+
+	label { 
+		display: block; 
+		padding-bottom: .5rem;
+	}
 }
+
 
 
 .search-form {

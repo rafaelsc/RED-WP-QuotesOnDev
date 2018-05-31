@@ -529,6 +529,7 @@ input[type="url"],
 input[type="password"],
 input[type="search"],
 textarea {
+  width: 65%;
   color: #fff;
   background-color: #222;
   border: 2px solid #00cc00;
@@ -559,6 +560,9 @@ fieldset {
   border: 0;
   margin: 0;
   padding: 0; }
+  fieldset label {
+    display: block;
+    padding-bottom: .5rem; }
 
 .search-form input {
   width: 300px;
