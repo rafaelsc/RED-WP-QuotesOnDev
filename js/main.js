@@ -2,7 +2,6 @@
 
     $('#new-quote-button').on('click', function(event) {
         event.preventDefault();
-        console.log("asasa");
 
         $.ajax({
             method: 'GET',
@@ -11,9 +10,16 @@
             success: function(data) {
                 var quote = data[0].content.rendered;
                 var author = data[0].title.rendered;
+                var quoteSource = data[0]._qod_quote_source;
+                var quoteSourceUrl = data[0]._qod_quote_source_url;
 
                 $('.entry-content').html(quote);
                 $('.entry-title-text').text(author);
+
+                var source = quoteSource && quoteSourceUrl ? '<a href="' + quoteSourceUrl + '" target="_blank">' + quoteSource + '</a>' : quoteSource;
+                $('.entry-reference').html(source);
+
+                //history.pushState(null, null, a)
             }
         });
     });
