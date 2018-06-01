@@ -573,6 +573,21 @@ fieldset {
   padding-left: .75rem;
   padding-right: .75rem; }
 
+.new-quote-button {
+  margin-top: 3rem;
+  margin-bottom: 3rem; }
+  @media (min-width: 1080px) {
+    .new-quote-button {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; } }
+
 /*--------------------------------------------------------------
 # Navigation
 --------------------------------------------------------------*/
@@ -842,10 +857,12 @@ object {
   .number-pagination .page-numbers {
     padding: 0 .25rem; }
 
-.archive .entry-content {
+.archive .entry-content,
+.home .entry-content {
   font-size: 2.25rem; }
 
-.archive .entry-title {
+.archive .entry-title,
+.home .entry-title {
   font-size: 1.25rem;
   font-weight: 400; }
 

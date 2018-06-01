@@ -75,7 +75,7 @@ fieldset {
 	}
 }
 
-
+///////////////////////////////
 
 .search-form {
 	input {
@@ -86,5 +86,18 @@ fieldset {
 		border: none;
 		padding-left: .75rem;
 		padding-right: .75rem;
+	}
+}
+
+.new-quote-button {
+
+	margin-top: 3rem;
+	margin-bottom: 3rem;
+
+	@include desktop {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		// margin: 0 auto;
 	}
 }
