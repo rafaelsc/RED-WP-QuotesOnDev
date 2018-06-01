@@ -14,7 +14,7 @@ get_header(); ?>
 
 			<?php if ( current_user_can( 'publish_posts' ) ) : ?>
 
-				<form>
+				<form id="submit-post">
 					<fieldset>
 						<label>Author of Quote</label>
 						<input id="author" type="text" required="required"/>
@@ -32,7 +32,7 @@ get_header(); ?>
 						<input id="url" type="url"/>
 					</fieldset>
 				
-					<button id="submit-quote">Submit quote</button>
+					<button id="submit-quote" type="submit">Submit quote</button>
 				</form>
 
 			<?php else : ?>

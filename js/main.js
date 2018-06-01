@@ -1,5 +1,5 @@
 (function($) {
-    
+
     $('#new-quote-button').on('click', function(event) {
         event.preventDefault();
         console.log("asasa");
@@ -14,6 +14,38 @@
 
                 $('.entry-content').html(quote);
                 $('.entry-title').text(author);
+            }
+        });
+    });
+
+    $('#submit-post').on('submit', function(event) {
+        event.preventDefault();
+
+        var author = $('#author').val();
+        var quote = $('#quote').val();
+        var source = $('#source').val();
+        var url = $('#url').val();
+
+        var payload = {
+            title: author,
+            content: quote,
+            _qod_quote_source: source,
+            _qod_quote_source_url: url,
+            status: 'publish'
+        };
+
+        $.ajax({
+            method: 'POST',
+            url: api_vars.url + 'wp/v2/posts',
+            data: payload,
+            beforeSend: function ( xhr ) {
+                xhr.setRequestHeader( 'X-WP-Nonce', api_vars.nonce );
+            },
+            success : function(data) {
+                    window.location.href = data.link;
+            },
+            fail : function() {
+                alert( ' There was an error while adding your quote. ');
             }
         });
     });
