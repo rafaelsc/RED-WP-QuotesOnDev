@@ -13,7 +13,7 @@
                 var author = data[0].title.rendered;
 
                 $('.entry-content').html(quote);
-                $('.entry-title').text(author);
+                $('.entry-title-text').text(author);
             }
         });
     });

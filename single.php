@@ -15,6 +15,11 @@ get_header(); ?>
 
 		<?php endwhile; // End of the loop. ?>
 
+
+			<div class="new-quote-button">
+				<button type="button" id="new-quote-button">Show Me Another!</button>
+			</div>
+			
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
