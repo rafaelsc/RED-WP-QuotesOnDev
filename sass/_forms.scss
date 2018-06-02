@@ -11,8 +11,8 @@ input[type="submit"] {
 	color: $color__brand-green;
 	background-color: $color__background-body;
 	border: 2px solid $color__brand-green;
-	
-    border-radius: 3px;
+	border-radius: 3px;
+	outline: none;
 
     font-size: 1rem;
     font-weight: 700;
@@ -36,17 +36,17 @@ input[type="search"],
 textarea { 
 
 	width: 65%;
-	
 	color: $color__text-screen;
 	background-color: $color__background-body;
     border: 2px solid $color__brand-green;
-	
 	border-radius: 3px;
+	outline: none;
+
     margin-bottom: 1.5rem;
 	padding: .25rem .5rem;
 	
 	&:focus {
-		color: #111;
+		//color: #111;
 	}
 }
 

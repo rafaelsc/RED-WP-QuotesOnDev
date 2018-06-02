@@ -40,7 +40,7 @@ get_header(); ?>
 				<p><?php echo esc_html( 'Sorry, you must be logged in to submit a quote!' ); ?></p>
 
 				<a href="<?php echo esc_url( wp_login_url( get_permalink() ) ); ?>" alt="<?php esc_attr_e( 'Login', 'textdomain' ); ?>">
-					<?php _e( 'Login', 'textdomain' ); ?>
+					Click here to login.
 				</a>
 
 			<?php endif; ?>

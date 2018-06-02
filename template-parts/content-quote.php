@@ -13,7 +13,7 @@
 		<?php the_excerpt(); ?>
 	</div><!-- .entry-content -->
 
-	<footer class="entry-header">
+	<footer class="entry-footer">
 		<h2 class="entry-title">
 			— <?php the_title( sprintf( '<span class="entry-title-text">', esc_url( get_permalink() ) ), '</span>' ); ?>
 			<span class="entry-reference">
