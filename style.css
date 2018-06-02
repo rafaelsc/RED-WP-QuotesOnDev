@@ -537,18 +537,10 @@ textarea {
   border-radius: 3px;
   outline: none;
   margin-bottom: 1.5rem;
-  padding: .25rem .5rem; }
-
-input[type="text"],
-input[type="email"],
-input[type="url"],
-input[type="password"],
-input[type="search"] {
-  font-size: 1.5rem;
-  padding: 8px; }
+  padding: .25rem .5rem;
+  font-size: 1.25rem; }
 
 textarea {
-  padding-left: 3px;
   width: 100%; }
 
 fieldset {
@@ -560,8 +552,7 @@ fieldset {
     padding-bottom: .5rem; }
 
 .search-form input {
-  width: 300px;
-  height: 30px; }
+  width: 300px; }
 
 .search-form .search-submit {
   border: none;
