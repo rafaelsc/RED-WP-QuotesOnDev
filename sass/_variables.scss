@@ -6,9 +6,7 @@ $base__space-unit: 1.5rem; //The base spacing unit is 1.5rem
 // Colors
 
 $color__brand-green: #00cc00; //The HEX code for the green brand colour is #00cc00
-
 $color__background-body: #222; //The main background colour is #222222
-
 
 ///
 
@@ -42,4 +40,4 @@ $font__line-height-pre: 1.6;
 // Borders
 
 $border__solid: 1px solid $color__border_1;
-$border__dashed: 1px dotted $color__border_2;
+$border__dashed: 1px dashed $color__border_2;
