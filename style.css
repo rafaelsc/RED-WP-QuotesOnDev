@@ -860,6 +860,15 @@ object {
 .post .entry-content {
   font-size: 2.25rem; }
 
+.post .entry-header {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex; }
+
+.post .entry-reference {
+  height: 100%;
+  font-style: italic; }
+
 .post .entry-title {
   font-size: 1.25rem;
   font-weight: 400; }

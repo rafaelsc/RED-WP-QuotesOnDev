@@ -12,14 +12,15 @@
                 var author = data[0].title.rendered;
                 var quoteSource = data[0]._qod_quote_source;
                 var quoteSourceUrl = data[0]._qod_quote_source_url;
+                var slug = data[0].slug;
 
                 $('.entry-content').html(quote);
                 $('.entry-title-text').text(author);
 
                 var source = quoteSource && quoteSourceUrl ? '<a href="' + quoteSourceUrl + '" target="_blank">' + quoteSource + '</a>' : quoteSource;
-                $('.entry-reference').html(source);
+                $('.entry-reference').html(source ? ', ' + source : '');
 
-                //history.pushState(null, null, a)
+                history.pushState(null, null, api_vars.mainUrl + "/" + slug + "/");
             }
         });
     });
