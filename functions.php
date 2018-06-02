@@ -74,6 +74,13 @@ function qod_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'qod_scripts' );
 
+function qod_university_adjust_queries($query){
+	if ( $query->is_archive() && $query->is_main_query() && !is_admin() ) {
+        $query->set( 'posts_per_page', 5 );
+    }
+}
+add_action( 'pre_get_posts', 'qod_university_adjust_queries' );
+
 /**
  * Custom functions that act independently of the theme templates.
  */
