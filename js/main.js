@@ -21,7 +21,7 @@
                 var source = quoteSource && quoteSourceUrl ? '<a href="' + quoteSourceUrl + '" target="_blank">' + quoteSource + '</a>' : quoteSource;
                 $('.entry-reference').html(source ? ', ' + source : '');
 
-                history.pushState(null, null, apiVars.mainUrl + "/" + slug + "/");
+                history.pushState(null, null, apiVars.mainUrl + '/' + slug + '/');
             }
         });
     });
