@@ -43,17 +43,8 @@ A wordpress theme created at RED Academy.
 ## Installation instructions
 
 * Install MANP and Last Wordpress version
-* Clone the repo in the __wp-content__ wordpress directory
-* Load the database dump file into the wordpess database. 
-
-## Contribution instructions
-
-* Install MANP and Last Wordpress version
-* Clone the repo in the __wp-content__ wordpress directory
-* Load the database dump file into the wordpess database.
-* run _npm install_ in __wp-content__
-* go to __\wp-content\themes\inhabitent__ directory and run _gulp_
-
+* Clone the repo in the __\wp-content\themes\quotesondev__ wordpress directory
+* Load the database dump file into the wordpess database. (_wp_quotesondev-migrate-20180607010723.sql_)
 
 -----------------------------------------------
 ## Licence
