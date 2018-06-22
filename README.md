@@ -44,7 +44,7 @@ A wordpress theme created at RED Academy.
 
 * Install MANP and Last Wordpress version
 * Clone the repo in the __\wp-content\themes\quotesondev__ wordpress directory
-* Load the database dump file into the wordpess database. (_wp_quotesondev-migrate-20180607010723.sql_)
+* Load the database dump file into the wordpess database. (_wp_quotesondev-migrate-20180622031346.sql_)
 
 -----------------------------------------------
 ## Licence
